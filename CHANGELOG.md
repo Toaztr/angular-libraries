@@ -1,5 +1,13 @@
 # Changelog
 
+### [1.7.1](https://www.github.com/Toaztr/angular-libraries/compare/v1.7.0...v1.7.1) (2021-10-07)
+
+
+### Bug Fixes
+
+* prices changes ([bdadf1c](https://www.github.com/Toaztr/angular-libraries/commit/bdadf1c039dbf81366bde88ad6f59482e4163c12))
+* Several fixes in CI ([13b7688](https://www.github.com/Toaztr/angular-libraries/commit/13b7688e4e3211fc1541edd531bf74494fe9c5e9))
+
 ## [1.6.0](https://www.github.com/Toaztr/angular-libraries/compare/v1.5.0...v1.6.0) (2021-09-29)
 
 
