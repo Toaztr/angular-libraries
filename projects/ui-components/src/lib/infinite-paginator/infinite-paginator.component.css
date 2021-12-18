@@ -1,0 +1,12 @@
+.infinite-paginator-container {
+    align-items: center;
+    display: flex;
+}
+
+.left-separator {
+    margin-left: auto;
+}
+
+.from-to {
+    margin-right: 15px;
+}

@@ -1,0 +1,13 @@
+<div class='infinite-paginator-container'>
+    <div class="left-separator"></div>
+    <span *ngIf='!!fromItem && !!toItem' class="from-to">{{fromItem}} - {{toItem}}</span>
+    <button mat-icon-button [disabled]='!hasPrev' (click)='first()'>
+        <mat-icon>first_page</mat-icon>
+    </button>
+    <button mat-icon-button [disabled]='!hasPrev' (click)='prev()'>
+        <mat-icon>chevron_left</mat-icon>
+    </button>
+    <button mat-icon-button [disabled]='!hasNext' (click)='next()'>
+        <mat-icon>chevron_right</mat-icon>
+    </button>
+</div>

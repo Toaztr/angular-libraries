@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';  
 import { BrowserModule } from '@angular/platform-browser';
+import { MatIconModule } from '@angular/material/icon'; 
+import { MatButtonModule } from '@angular/material/button'; 
+
 import { UiComponentsComponent } from './ui-components.component';
 import { SoloPricingComponent } from './solo-pricing/solo-pricing.component';
 import { TeamPricingComponent } from './team-pricing/team-pricing.component';
@@ -8,6 +11,7 @@ import { EnterprisePricingComponent } from './enterprise-pricing/enterprise-pric
 import { ApiStartPricingComponent } from './api-start-pricing/api-start-pricing.component';
 import { ApiEnterprisePricingComponent } from './api-enterprise-pricing/api-enterprise-pricing.component';
 import { BasePricingComponent } from './base-pricing/base-pricing.component';
+import { InfinitePaginatorComponent } from './infinite-paginator/infinite-paginator.component';
 
 
 @NgModule({
@@ -18,11 +22,14 @@ import { BasePricingComponent } from './base-pricing/base-pricing.component';
     EnterprisePricingComponent,
     ApiStartPricingComponent,
     ApiEnterprisePricingComponent,
-    BasePricingComponent
+    BasePricingComponent,
+    InfinitePaginatorComponent
   ],
   imports: [
     CommonModule,
-    BrowserModule
+    BrowserModule,
+    MatIconModule,
+    MatButtonModule
   ],
   exports: [
     UiComponentsComponent,
@@ -30,7 +37,8 @@ import { BasePricingComponent } from './base-pricing/base-pricing.component';
     TeamPricingComponent,
     EnterprisePricingComponent,
     ApiStartPricingComponent,
-    ApiEnterprisePricingComponent
+    ApiEnterprisePricingComponent,
+    InfinitePaginatorComponent
   ]
 })
 export class UiComponentsModule { }
