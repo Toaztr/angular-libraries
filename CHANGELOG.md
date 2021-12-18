@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0](https://www.github.com/Toaztr/angular-libraries/compare/v1.7.1...v1.8.0) (2021-12-18)
+
+
+### Features
+
+* infinite-paginator ([578400e](https://www.github.com/Toaztr/angular-libraries/commit/578400e8c0cbd230048d15560967fe53c5e1c19d))
+
 ### [1.7.1](https://www.github.com/Toaztr/angular-libraries/compare/v1.7.0...v1.7.1) (2021-10-07)
 
 
