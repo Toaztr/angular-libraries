@@ -1,4 +1,20 @@
-<div style="display: flex; justify-content: center; background-color: red;">
+<table mat-table [dataSource]='paginator.dataSource'>
+    <ng-container matColumnDef='name'>
+        <th mat-header-cell *matHeaderCellDef> Nom </th>
+        <td mat-cell *matCellDef='let element'> {{element.name}} </td>
+    </ng-container>
+    <ng-container matColumnDef='ref'>
+        <th mat-header-cell *matHeaderCellDef> Identifiant </th>
+        <td mat-cell *matCellDef='let element'> {{element.ref}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef='teamMembersColumns'></tr>
+    <tr mat-row *matRowDef='let row; columns: teamMembersColumns;'></tr>
+</table>
+<tzr-infinite-paginator #paginator [dataService]='dataService'></tzr-infinite-paginator>
+
+
+<!-- <div style="display: flex; justify-content: center; background-color: red;">
     <tzr-cmp-solo-pricing link="http://google.fr" btnText="Hello World" (planClicked)="alert('solo selected');">
     </tzr-cmp-solo-pricing>
 
@@ -7,50 +23,6 @@
 
     <tzr-cmp-enterprise-pricing btnText="Bientot disponible"></tzr-cmp-enterprise-pricing>
 
-</div>
-
-
-
-
-<div style="display: flex; justify-content: space-evenly;">
-    <!-- <tzr-cmp-api-start-pricing (planSelected)="alert('start selected');"></tzr-cmp-api-start-pricing>
-  <tzr-cmp-api-enterprise-pricing></tzr-cmp-api-enterprise-pricing> -->
-</div>
-
-
-
-<!-- <div class="pricingCard">
-  <div class="pricingCard-header">
-      <span class="heading">
-          Forfait Solo
-      </span>
-  </div>
-  <div class="pricing-plans">
-      <span class="price-value">
-          <span class="value">19</span>
-          <span class="currency">,99€</span>
-          <span class="month"> /mois </span>
-          <br>
-          <span class="tax"> hors taxe</span>
-      </span>
-      <span class="subtitle">Pour l'entrepreneur individuel</span>
-  </div>
-  <div class="pricingContent">
-      <div class="pricing-description">1 licence d’accès personnelle, incluant:</div>
-      <ul>
-          <li>Calcul de budget</li>
-          <li>Calcul de financement</li>
-          <li>Rachat de crédit</li>
-          <li>Simulation d’un dispositif Pinel</li>
-          <li>Calcul des frais de notaire</li>
-          <li>Gestion des dossiers emprunteur</li>
-          <li>Gestion des partenaires</li>
-          <li>Génération de mandat</li>
-          <li>Génération de la fiche conseil</li>
-          <li>Génération de la carcasse banque</li>
-      </ul>
-  </div>
-  <div class="pricingCard-sign-up">
-      <a href="#" class="btn-block btn-default" >Choisir ce plan</a>
-  </div>
 </div> -->
+
+
